@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;800&display=swap');
+
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;/*viewport*/
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    margin: 50px;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;/*fraction,one part of whole*/
+    box-shadow:  0 35px 55px rgba(42, 33, 33, 0.1);
+}
+.profileText{ /*priyalatha to be center*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 3px solid rgba(23, 9, 9, 0.2); /*horizontal line */
+
+}
+.profileText .imgBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.profileText .imgBox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    clip-path: circle();
+}
+
+
+.contactInfo{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 3px solid rgba(23, 9, 9, 0.2);
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+   
+}
+.contactInfo ul{
+    position: relative;
+    padding-top: 15px;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(7, 1, 43);
+}
+
+.contactInfo ul li span{
+    color: #040101;
+
+}
+.contactInfo ul li text{
+    padding-left: 50px;
+    position: absolute;
+}
+.contactInfo ul li a{
+    color: black;
+}
+
+.container .left_side{
+    position: relative;
+    background-color:SlateBlue ;
+    padding: 50px;
+}
+
+/*Skills*/
+.Skills{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 3px solid rgba(23, 9, 9, 0.2);
+}
+.Skills .title{     /*skill title space and gaps */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.Skills ul{                     /*under skill title space*/ 
+    position: relative;
+    padding-top: 5px;
+}
+
+.Skills ul li{
+    position: relative;
+    padding-top: 15px;
+}
+
+/*certificate*/
+.Certificate{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.Certificate .title{     /*skill title space and gaps */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.Certificate ul{                     /*under skill title space*/ 
+    position: relative;
+    padding-top: 5px;
+}
+
+.Certificate ul li{
+    position: relative;
+    padding-top: 15px;
+}
+
+/*right-side common */
+.right_side h2{
+    color: rgb(18, 18, 59);
+    font-size: 40px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 900px;
+    line-height: 1.4em;
+    padding-bottom: 80px; /*rgt line =left line same*/
+    border-bottom: 4px solid rgba(23, 9, 9, 0.2);
+    border-bottom-width: medium;
+}
+.right_side .title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+/*career obj right side content*/
+.Carrer_objective p{
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    padding-bottom: 25px;
+    border-bottom: 4px solid rgba(23, 9, 9, 0.2);
+}
+
+/*Education*/
+.Education  ul{
+    padding-top: 20px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    padding-top: 10px;
+    border-bottom: 4px solid rgba(23, 9, 9, 0.2);
+}
+.Education  h5{
+    font-size: 20px;
+}
+.Education .text li {
+    padding-top: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    
+}
+.Education  li{
+    position: relative;
+    padding-top: 20px;
+}
+.Education  ul{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+
+
+/*Internship*/
+.Internships ul{
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    padding-bottom: 30px;
+    border-bottom: 4px solid rgba(23, 9, 9, 0.2);
+}
+
+/*projects*/
+.Projects ul{
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    padding-bottom: 10px;
+   
+}
+.container .right_side{
+    position: relative;
+    background-color:rgb(116, 121, 188);
+    padding: 130px;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+      background-color: rgb(10, 14, 15);
+    }
+  }
+
+
+
+
+   
