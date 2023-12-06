@@ -10,7 +10,7 @@
     font-family: 'Poppins',sans-serif;
 }
 body{
-    background-color: black;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@ body{
 .contactInfo{
     padding-top: 30px;
     padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 15px;
     border-bottom: 3px solid rgba(23, 9, 9, 0.2);
 }
 .title{
@@ -83,7 +83,7 @@ body{
 .contactInfo ul li .icon{
     display: inline-block;
     width: 30px;
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(7, 1, 43);
 }
 
