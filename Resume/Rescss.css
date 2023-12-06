@@ -8,11 +8,16 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh; /*viewport*/
+}
+body{
+  background-image: url('img/bckimg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 }
 
 .container {
@@ -21,10 +26,11 @@ body {
   margin: 50px;
   max-width: 1000px;
   min-height: 1000px;
-  background: rgb(23, 94, 94);
+  background: rgb(13, 36, 36);
   display: grid;
   grid-template-columns: 1fr 2fr; /*fraction,one part of whole*/
   box-shadow: 0 35px 55px rgba(42, 33, 33, 0.1);
+  
 }
 .profileText {
   /*priyalatha to be center*/
@@ -34,7 +40,7 @@ body {
   align-items: center;
   padding-bottom: 20px;
   font-size: 20px;
-  border-bottom: 4px solid rgba(23, 9, 9, 0.2); /*horizontal line */
+  border-bottom: 4px solid rgba(209, 206, 206, 0.977); /*horizontal line */
 }
 .profileText .imgBox {
   position: relative;
@@ -55,12 +61,13 @@ body {
 
 .contactInfo {
   padding-top: 30px;
+  padding-left: 30px;
   padding-bottom: 20px;
-  font-size: 15px;
-  border-bottom: 3px solid rgba(23, 9, 9, 0.2);
+  font-size: 16px;
+  border-bottom: 3px solid rgba(251, 249, 249, 0.943);
 }
 .title {
-  color: darkblue;
+  color: rgb(78, 154, 116);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -75,69 +82,81 @@ body {
   list-style: none;
   cursor: pointer;
   margin: 10px 0;
+  
 }
 .contactInfo ul li .icon {
   display: inline-block;
   width: 30px;
-  font-size: 15px;
-  color: rgb(7, 1, 43);
+  font-size: 30px;
+  color: rgb(84, 152, 125);
+  padding-right: 25px;
 }
 
 .contactInfo ul li span {
-  color: #040101;
+  color: #dbd8d8;
+  font-size: 15px;
 }
 .contactInfo ul li text {
-  padding-left: 50px;
+  padding-left: 80px;
   position: absolute;
 }
 .contactInfo ul li a {
-  color: black;
+  color: rgb(243, 239, 239);
+  font-size: 20px;
 }
 
 .container .left_side {
   position: relative;
   /*background-color:rgb(37, 201, 213)97, 205) ;*/
-  background-color: rgb(37, 201, 213);
-  color: rgb(18, 16, 16);
+  background-color: rgb(43, 35, 72);
+  color: rgb(240, 236, 236);
   padding: 50px;
 }
 
 /*Skills*/
 .Skills {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 20px;
   font-size: 20px;
-  border-bottom: 3px solid rgba(191, 75, 75, 0.2);
+  border-bottom: 3px solid rgb(245, 245, 245);
 }
 .Skills .title {
   /*skill title space and gaps */
-  color: darkblue;
+  color: rgb(78, 154, 116);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
+  padding-left: 30px;
 }
 .Skills ul {
   /*under skill title space*/
   position: relative;
   padding-top: 5px;
+  padding-left: 70px;
 }
 
 .Skills ul li {
   position: relative;
   padding-top: 15px;
+  padding-left: 30px;
+  
 }
 
 /*certificate*/
 .Certificate {
-  padding-top: 20px;
+  padding-top: 15px;
   font-size: 20px;
+  padding-left: 60px;
+  position: relative;
 }
-.Certificate .title {
+.Certificate .title h3{
   /*skill title space and gaps */
-  color: darkblue;
+  color: rgb(78, 154, 116);
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
+  padding-left: 30px;
+  
 }
 .Certificate ul {
   /*under skill title space*/
@@ -148,6 +167,11 @@ body {
 .Certificate ul li {
   position: relative;
   padding-top: 15px;
+}
+.Certificate ul li p{  /*space bt title and des para */
+  padding-top: 15px;
+  position: relative;
+
 }
 
 /*right-side common */
@@ -160,7 +184,7 @@ body {
   font-weight: 900;
   line-height: 1.4em;
   padding-bottom: 80px; /*rgt line =left line same*/
-  border-bottom: 4px solid rgba(23, 9, 9, 0.2);
+  border-bottom: 5px solid rgba(23, 9, 9, 0.2);
   border-bottom-width: medium;
 }
 .right_side .title {
@@ -169,51 +193,60 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 /*career obj right side content*/
 .Carrer_objective p {
   padding-top: 10px;
   letter-spacing: 0.5px;
   font-size: 20px;
+  font-weight: 500;
   padding-bottom: 25px;
-  border-bottom: 4px solid rgba(23, 9, 9, 0.2);
+  border-bottom: 5px solid rgba(23, 9, 9, 0.2);
 }
 
+
+
 /*Education*/
-.Education ul {
+.Academiccredential ul {
   padding-top: 20px;
-  letter-spacing: 0.5px;
+  /*letter-spacing: 0.5px;*/
   font-size: 20px;
   padding-bottom: 20px;
   position: relative;
   padding-top: 10px;
-  border-bottom: 4px solid rgba(23, 9, 9, 0.2);
+  border-bottom: 5px solid rgba(13, 7, 7, 0.2);
 }
-.Education h5 {
+.Academiccredential ul li  h5 {
   font-size: 20px;
+  padding-top: 5px;
 }
-.Education .text li {
+.Academiccredential .text li {
   padding-top: 20px;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
-.Education li {
+.Academiccredential ul li p {
   position: relative;
-  padding-top: 20px;
+  padding-top: 10px;
 }
-.Education ul {
+.Academiccredential ul {
   position: relative;
   padding-bottom: 30px;
 }
+
 /*Internship*/
 .Internships ul {
-  padding-top: 10px;
+  padding-top: 20px;
   letter-spacing: 0.5px;
   font-size: 20px;
   padding-bottom: 30px;
-  border-bottom: 4px solid rgba(23, 9, 9, 0.2);
+  border-bottom: 5px solid rgba(23, 9, 9, 0.2);
   
+}
+.Internships ul li p{
+  padding-top: 15px;
+  position: relative;
 }
 
 /*projects*/
@@ -225,7 +258,7 @@ body {
 }
 .container .right_side {
   position: relative;
-  background-color: rgb(87, 189, 218);
+  background-color: rgb(236, 239, 240);
   padding: 130px;
 }
 
