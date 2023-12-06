@@ -10,7 +10,7 @@
     font-family: 'Poppins',sans-serif;
 }
 body{
-    background-color: black;
+    background-color: rgb(243, 246, 246);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ body{
     margin: 50px;
     max-width: 1000px;
     min-height: 1000px;
-    background: #fff;
+    background: rgb(241, 242, 242), 255, 255)505;
     display: grid;
     grid-template-columns: 1fr 2fr;/*fraction,one part of whole*/
     box-shadow:  0 35px 55px rgba(42, 33, 33, 0.1);
@@ -35,7 +35,7 @@ body{
     align-items: center;
     padding-bottom: 20px;
     font-size: 20px;
-    border-bottom: 3px solid rgba(23, 9, 9, 0.2); /*horizontal line */
+    border-bottom: 4px solid rgba(23, 9, 9, 0.2); /*horizontal line */
 
 }
 .profileText .imgBox{
@@ -63,9 +63,9 @@ body{
     border-bottom: 3px solid rgba(23, 9, 9, 0.2);
 }
 .title{
-    color: #fff;
+    color: darkblue;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
    
 }
@@ -101,7 +101,7 @@ body{
 
 .container .left_side{
     position: relative;
-    background-color:SlateBlue ;
+    background-color:rgb(37, 201, 213)97, 205) ;
     padding: 50px;
 }
 
@@ -110,10 +110,10 @@ body{
     padding-top: 30px;
     padding-bottom: 20px;
     font-size: 20px;
-    border-bottom: 3px solid rgba(23, 9, 9, 0.2);
+    border-bottom: 3px solid rgba(191, 75, 75, 0.2);
 }
 .Skills .title{     /*skill title space and gaps */
-    color: #fff;
+    color:darkblue;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -134,10 +134,10 @@ body{
     font-size: 20px;
 }
 .Certificate .title{     /*skill title space and gaps */
-    color: #fff;
+    color:darkblue;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
 }
 .Certificate ul{                     /*under skill title space*/ 
     position: relative;
@@ -147,6 +147,7 @@ body{
 .Certificate ul li{
     position: relative;
     padding-top: 15px;
+    
 }
 
 /*right-side common */
