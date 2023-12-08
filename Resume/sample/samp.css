@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust width as needed */
+    height: 100vh; /* Full height of the viewport */
+    padding-top: 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .container {
+    margin-left: 200px; /* Same as the width of the navbar */
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: 40px; /* Adjust the top margin to prevent overlapping */
+  }
+  
