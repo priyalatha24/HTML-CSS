@@ -89,6 +89,7 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  text-shadow: 0 0 3px #68c44c;
 }
 
 /*space under title */
@@ -228,6 +229,7 @@ body {
   /*rgt line =left line same*/
   border-bottom: 5px solid rgba(23, 9, 9, 0.2);
   border-bottom-width: medium;
+  text-shadow: 0 0 3px #FF0000;
 }
 
 .right_side .title {
@@ -237,6 +239,8 @@ body {
   letter-spacing: 1px;
   font-size: 20px;
   padding-top: 25px;
+  text-shadow: 0 0 3px #FF0000;
+ 
 }
 
 /*career obj right side content*/
