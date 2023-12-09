@@ -56,15 +56,32 @@ nav{
  
 }
 
-
 .container{
+    flex: 3;
+}
+
+.container .left{
     display: flex;
     flex-direction: column;
-    background-color: rgb(30, 17, 17);
+    background-color: rgb(217, 165, 165); 
+    width: 400px;
+    height: 1000px;
+    
 }
-.left{
+
+.container .right{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(217, 165, 165); 
+    width: 400px;
+    height: 1000px;
+    justify-content: flex-end;
+    
+}
+
+/* .left{
     position: absolute;
     width: 70%;
     background-color: aqua; 
-}
+} */
 
