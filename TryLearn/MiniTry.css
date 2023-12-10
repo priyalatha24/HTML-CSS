@@ -109,15 +109,54 @@ ol:last-child {
  }
   */
  
- .container > div {
-   background-color: #c21a1a;
-   width: 500px;
-   height: 1000px;
+ .container > .Box-2 {
+   background-color: #efe6e6;
+   color: rgb(12, 11, 9);
+   width: 1500px;
+   height: 1500px;
    margin: 20px;
    text-align: center;
    line-height: 85px;
    font-size: 30px;
  }
+ .container > .Box-1 {
+   background-color: #eae4e4;
+   color: black;
+   width: 800px;
+   height: 1500px;
+   margin: 20px;
+   text-align: center;
+   line-height: 85px;
+   font-size: 30px;
+ }
+ .container > .Box-3 {
+   background-color: #eae3e3;
+   color: black;
+   width: 800px;
+   height: 1500px;
+   margin: 20px;
+   text-align: center;
+   line-height: 85px;
+   font-size: 30px;
+ }
+
+ .iframecontainer {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 50px;
+   
+ }
+ .iframecontainer > div {
+   background-color: #11ed1c;
+   width: 100px;
+   margin: 80px;
+   justify-content: center;
+   text-align: center;
+   line-height: 100px;
+   font-size: 30px;
+ }
+ 
+
 
 
 
