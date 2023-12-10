@@ -1,0 +1,125 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+/*background img setting full pg */
+body{
+   background-image:url('imagestrylearn/bkimg.jpg') ;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+h1{
+   color: white;
+   font-size: 70px;
+   text-align: center; /* h1 to center */
+}
+ul {
+   margin-top: 20px;
+   list-style-type: none;
+   padding: 3px; 
+   overflow: hidden;
+   background-color: aquamarine;
+}
+ol{
+   float:left;
+}
+
+ol a{
+   display: block;
+   color:rgb(168, 166, 214);
+   text-align: center;
+   padding: 40px;
+   padding-left: 50px;
+   margin-left: 30px;
+   font-size: 25px;
+   text-decoration: none;
+}
+ol:last-child {
+   float: right;
+   color: aliceblue;
+   padding-right: 90px;
+ }
+ ul button{
+   border-radius: 30px;
+   font-size: 1em;
+   padding: 20px;
+   
+ }
+ .Youtube button{
+   background-color: rgb(225, 55, 55);
+ }
+ .FB button{
+   background-color: rgb(66, 151, 237);
+ }
+
+ .Whatsup button{
+   background-color: rgb(36, 161, 84);
+ }
+
+ .About button{
+   background-color: rgb(169, 239, 17);
+ }
+
+ .container {
+   display: flex;
+   color: white;
+   justify-content: space-between;
+   flex-direction: row; /*display as coloum */
+ }
+ /* .Box-1{
+   flex: 1;
+   background-color: rgb(17, 182, 182);
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   width: 15%;
+   float: left;
+   margin: 40px;
+   border: 40px;
+   height: 1000px;
+ }
+ .Box-2{
+   flex: 1;
+   background-color: rgb(27, 39, 39);
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   width: 25%;
+   float: left;
+   margin: 40px;
+   border: 40px;
+   height: 1000px;
+   
+ }
+ .Box-3{
+   flex: 1;
+   background-color: rgb(85, 80, 180);
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   width: 25%;
+   float: left;
+   margin: 40px;
+   border: 40px;
+   height: 1000px;
+   
+ }
+  */
+ 
+ .container > div {
+   background-color: #c21a1a;
+   width: 500px;
+   height: 1000px;
+   margin: 20px;
+   text-align: center;
+   line-height: 85px;
+   font-size: 30px;
+ }
+
+
+
+
+   
