@@ -57,31 +57,12 @@ nav{
 }
 
 .container{
-    flex: 3;
-}
-
-.container .left{
     display: flex;
-    flex-direction: column;
-    background-color: rgb(217, 165, 165); 
-    width: 400px;
+    justify-content: center;
     height: 1000px;
-    
+    width: 450px;
+    padding: 20px;
+    background-color: aquamarine;
+  
 }
-
-.container .right{
-    display:flex;
-    flex-direction: column;
-    background-color: rgb(217, 165, 165); 
-    width: 400px;
-    height: 1000px;
-    justify-content: flex-end;
-    
-}
-
-/* .left{
-    position: absolute;
-    width: 70%;
-    background-color: aqua; 
-} */
 
