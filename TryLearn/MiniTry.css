@@ -63,12 +63,7 @@ ol:last-child {
    background-color: rgb(169, 239, 17);
  }
 
- .container {
-   display: flex;
-   color: white;
-   justify-content: space-between;
-   flex-direction: row; /*display as coloum */
- }
+ 
  /* .Box-1{
    flex: 1;
    background-color: rgb(17, 182, 182);
@@ -108,12 +103,18 @@ ol:last-child {
    
  }
   */
- 
+  .container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    flex-direction: row; /*display as coloum */
+  }
  .container > .Box-2 {
    background-color: #efe6e6;
    color: rgb(12, 11, 9);
    width: 1500px;
-   height: 1500px;
+   max-height: 500px;
+   max-height: 1000px;
    margin: 20px;
    text-align: center;
    line-height: 85px;
@@ -122,39 +123,52 @@ ol:last-child {
  .container > .Box-1 {
    background-color: #eae4e4;
    color: black;
-   width: 800px;
-   height: 1500px;
-   margin: 20px;
+   width: 700px;
+   max-height: 1000px;
+   margin: 10px;
    text-align: center;
-   line-height: 85px;
+   line-height: 55px;
    font-size: 30px;
+   overflow: scroll;
  }
  .container > .Box-3 {
    background-color: #eae3e3;
    color: black;
    width: 800px;
-   height: 1500px;
+   max-height: 1000px;
+
+   height: auto;
    margin: 20px;
    text-align: center;
    line-height: 85px;
    font-size: 30px;
  }
 
- .iframecontainer {
-   display: flex;
-   flex-direction: column;
-   padding-bottom: 50px;
-   
- }
- .iframecontainer > div {
-   background-color: #11ed1c;
-   width: 100px;
-   margin: 80px;
+ .iframecontainer  {
+   background-color: #d9ded9;
+   margin: 100px;
+   height: 700px;
    justify-content: center;
    text-align: center;
-   line-height: 100px;
-   font-size: 30px;
+   font-size: 40px;
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 60px;
+   text-align: center;
+   overflow: scroll;
+   flex-wrap: wrap;
+   scroll-behavior: smooth;
+   flex-direction: row;
  }
+ .box img{
+  background-color: rgb(165, 102, 224);
+  flex: 150%;
+  margin: 10px;
+  padding: 200px;
+  width: 500px;
+ }
+
+  
  
 
 
