@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 
 h1,h3{
     font-size: 55px;
@@ -12,12 +9,16 @@ h1,h3{
     letter-spacing: 1px;
 }
 .container input{
-    border-radius: 3px;
-    font-size: 55px;
-    padding: 50px;
-    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 30px;
+    margin: 0px auto;
     justify-content: center;
     width: 50%;
     border-color:black ;
     text-align: center;
+    
+}
+.container button{
+    font-size: 40px;
 }
