@@ -1,0 +1,19 @@
+{"data":[{"title":"Upcoming", "des":"Your awesome text goes here. Your awesome text goes here.",
+"data":[{"title":"When an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+"name":"Petey Cruiser", "profile":"https://bootdey.com/img/Content/avatar/avatar1.png", "is_completed": false},
+{"title":"Many desktop publishing packages and web page editors now use Lorem.", 
+"name":"Anna Sthesia", "profile":"https://bootdey.com/img/Content/avatar/avatar2.png", 
+"is_completed": false},
+{"title":"If you are going to use a passage of Lorem Ipsum..", 
+"name":"Gail Forcewind", "profile":"https://bootdey.com/img/Content/avatar/avatar3.png", 
+"is_completed": true},
+{"title":"It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.", 
+"name":"Maya Didas", "profile":"https://bootdey.com/img/Content/avatar/avatar4.png", 
+"is_completed": false},
+{"title":"There are many variations of passages of Lorem Ipsum available.", 
+"name":"Rick O'Shea", 
+"profile":"https://bootdey.com/img/Content/avatar/avatar5.png", "is_completed": false}]},
+
+
+
+{"title":"In Progress", "des":"Your awesome text goes here.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.", "data":[{"title":"If you are going to use a passage of Lorem Ipsum..", "name": "Gail Forcewind","profile":"https://bootdey.com/img/Content/avatar/avatar3.png", "is_completed": false},{"title":"It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.", "name":"Maya Didas", "profile":"https://bootdey.com/img/Content/avatar/avatar4.png", "is_completed": false},{"title":"There are many variations of passages of Lorem Ipsum available.", "name":"Rick O'Shea", "profile":"https://bootdey.com/img/Content/avatar/avatar5.png", "is_completed": false},{"title":"When an unknown printer took a galley of type and scrambled it to make a type specimen book.", "name":"Petey Cruiser", "profile":"https://bootdey.com/img/Content/avatar/avatar1.png", "is_completed": false}]},{"title":"Completed", "des":"Your awesome text goes here. Your awesome text goes here.", "data":[{"title":"When an unknown printer took a galley of type and scrambled it to make a type specimen book.", "name":"Petey Cruiser", "profile":"https://bootdey.com/img/Content/avatar/avatar1.png", "is_completed": false},{"title":"Many desktop publishing packages and web page editors now use Lorem.", "name":"Anna Sthesia", "profile":"https://bootdey.com/img/Content/avatar/avatar2.png", "is_completed": false},{"title":"If you are going to use a passage of Lorem Ipsum..", "name":"Gail Forcewind", "profile":"https://bootdey.com/img/Content/avatar/avatar3.png", "is_completed": true},{"title":"It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.", "name":"Maya Didas", "profile":"https://bootdey.com/img/Content/avatar/avatar4.png", "is_completed": false},{"title":"There are many variations of passages of Lorem Ipsum available.", "name":"Rick O'Shea", "profile":"https://bootdey.com/img/Content/avatar/avatar5.png", "is_completed": false}]}]}
