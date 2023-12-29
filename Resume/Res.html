@@ -4,21 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link rel="stylesheet" type="text/css" href="Rescss1.css" />
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="left_side">
+      crossorigin="anonymous"/>
+      <script>
+        function rescontent(){
+          let user ={
+              "data": [{
+      "phone": "8778734610",
+      "mailid": "priyalatha24042002@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/priyalatha-s/",
+      "github": "https://github.com/priyalatha24",
+      "skill": ["HTML", "CSS", "JS", "Git"],
+      "title":"udemy",
+      "udemy": "Introduction to web development",
+      "certificate": [
+        {
+          "title":"Guvi",
+          "Guvi": "Programming in Javascript"}, 
+          {
+            "title":"Guvi",
+            "Guvi":"Programming in HTML,CSS"}
+      ],
+      "careerObjective": "The quest to learn and work in an environment where my skill and knowledge reflect the company's growth and enhances my knowledge as well as experience. Seeking a new opportunity that will expand my skill set."
+    },
+    {
+      "ACADEMIC_CREDENTIAL": [
+        {
+          "heading": "BE-COMPUTER SCIENCE AND ENGINEERING",
+          "des": "Vivekanandha College of Technology for Women CGPA:8.15"
+        },
+        {
+          "heading": "HSC(2019)",
+          "des": "Cluny Matric Higher Secondary School"
+        },
+        {
+          "heading": "SSLC(2017)",
+          "des": "LEF Eden Garden Matric School"
+        }
+      ],
+      "INTERNSHIPS":[
+        {
+        "heading":"WEBDEVLOPMENT WITH PYTHON AT TECHVOLTSOFTWARE",
+        "des":"Devloped a e-commerce website that online shoppers see and interact"
+        }
+        ],
+        "PROJECTS":"Devloped a Library Management system,Devloped a Simple clothing Webpage like Flipkart"
+            }
+          ]
+}
+          let htmlContent ="";
+          user.data.forEach((user) =>{
+            htmlContent =`${htmlContent}
+            <div class="left_side">
         <div class="profileText">
           <div class="imgBox">
-            <img src="./img/priya_res.jpg" alt="profilepic" />
+            <img src="${user.img}" alt="profilepic" />
           </div>
          
         </div>
@@ -31,21 +77,21 @@
               <span class="icon"
                 ><i class="fa fa-mobile" aria-hidden="true"></i
               ></span>
-              <span class="text">&nbsp;&nbsp;8778734610</span>
+              <span class="text">&nbsp;&nbsp;${user.phone}</span>
             </li>
 
             <li>
               <span class="icon"
                 ><i class="fa fa-envelope" aria-hidden="true"></i
               ></span>
-              <span>&nbsp;&nbsp;24priyalatha@gmail.com</span>
+              <span>&nbsp;&nbsp;${user.mailid}</span>
             </li>
 
             <li>
               <span class="icon"
                 ><i class="fa fa-linkedin-square" aria-hidden="true"></i
               ></span>
-              <a href="https://www.linkedin.com/in/priyalatha-s/"
+              <a href="${user.linkedin}"
                 >linkedin.com</a
               >
             </li>
@@ -54,48 +100,50 @@
               <span class="icon"
                 ><i class="fa fa-github-square" aria-hidden="true"></i
               ></span>
-              <a href="https://github.com/priyalatha24">github.com</a>
+              <a href="${user.github}">github.com</a>
             </li>
           </ul>
         </div>
 
         <!--skills -->
         <div class="Skills">
-          <h3 class="title">Skills</h3>
+          <h3 class="title">Skills</h3>`
+        
+          user.skill.forEach((skills1)=>{
+            htmlContent =`${htmlContent}
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-            <li>GIT</li>
-          </ul>
+            <li>${skills1}</li>
+            
+          </ul>`})
+          htmlContent =`${htmlContent}
         </div>
+
 
         <!--Certificate-->
         <div class="Certificate">
-          <h3 class="title">Certificate</h3>
+          <h3 class="title">Certificate</h3>`
+          user.certificate.forEach((cer)=>{
+             htmlContent=`${htmlContent}
           <ul>
             <li>
-              <span class="text"><b>Udemy</b></span
+              <span class="text"><b>${cer.title}</b></span
               ><br />
-              <p>Introduction to webdevlopment</p>
+              <p>${cer.udemy}</p>
             </li>
             <li>
-              <span class="text"><b>Guvi</b></span
+              <span class="text"><b>${cer.title}</b></span
               ><br />
-              <p>Programming in HTML,CSS</p>
+              <p>${cer.Guvi}</p>
             </li>
-            <li>
-              <span class="text"><b>Guvi</b></span
-              ><br />
-              <p>Programming in Javascript</p>
-            </li>
-          </ul>
+            
+          </ul>`
+          htmlContent =`${htmlContent}
         </div>
       </div>
       <!--right side starts here -->
       <div class="right_side">
         <div class="about">
-          <h2 class="title2">PRIYALATHA S</h2>
+          <h2 class="title2"></h2>
         </div>
         <!--rgt side 1.career objective-->
         <div class="Carrer_objective">
@@ -174,5 +222,15 @@
         </div>
       </div>
     </div>
+  });
+  document.getElementByID("pannel").innerHTML = htmlContent;`
+
+          })
+        }
+  
+      </script>
+  </head>
+  <body>
+    <div class="container">
   </body>
 </html>

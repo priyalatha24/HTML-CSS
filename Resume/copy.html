@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/basic programs/ResumeStyeel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <script>
+        function loadContent() {
+            let user = {
+                "data": [{
+                    "name": "SARADHA.R",
+                    "position": "Full Stack Developer",
+                    "img": "/images/ResumeProfilePic.jpeg",
+                    "des": " Bsc.Computer Science graduate.Learning is an endless part of our life and I belive that i am a good learner and a great flexible person so that it will be a profitable investment of our company.",
+                    "phonenumber": "8946013563",
+                    "email": "saradha2125@gmail.com",
+                    "address": "Krishnan Lane,Dindigul.",
+                    "university": "MTW",
+                    "year": " 2020-2023",
+                    "percentage": "83.5%",
+                    "edu":[{"heading":"HSSC","name": "NIOS",
+                    "board": "CBSE",
+                    "year": "2018-2019",
+                    "percentage": "64%"},
+                    {"heading":"SSLC","name": "ST.Joseph",
+                    "board": "StateBoard",
+                    "year": "2016-2017",
+                    "percentage": "86.6%"}],
+                    "internship": "23.01.23 To 27.05.23: Associate Developer role was certified by Spot Future Techonolgy .",
+                    "languageknown": "JAVA,C,C++",
+                    "database": "ORACLE",
+                    "webdesigntool": "HTML,CSS,JAVASCRIPT",
+                    "intrest": ["FULL STACK DEVELOPMENT","WEB DESIGNING"],
+                    "ProjectName": "PYTHON CHESS GAME:",
+                    "projectdes": "The python chess game describes a computer program, which is able to play chess.The search algorithm runs minimax algorithm based on alpha-beta pruning with move ordering heuristic before selecting the next move.",
+                    "Achivements": ["16.03.21 - Winner of National level seminor on INTERNET OF THINGS.", "28.02.22 - Winner of Quiz Competition.", "30.03.22 - Runner in Paper Presentation of interface'22.", "30.03.22 - Runner in Paper Presentation of interface'22.", "20.10.22 - Winner in Info Talk.", "University Winner of chess."],
+                    "github": "https://github.com/SaradhaRamesh"
+                }
+                ]
+
+
+
+
+            }
+            let htmlContent = "";
+            user.data.forEach((user) => {
+                htmlContent = `${htmlContent}   
+                <div class="Heading">
+                <p>${user.name}</p>
+                <h3>${user.position}</h3>
+                 </div>
+            <div class="Left">
+                <div class="circular--portrait"> 
+                    <img src="${user.img}" /> 
+                </div>
+                <div class="Profile">
+                    <div class="synopsis">PROFILE</div>
+                    <p>${user.des}</p>
+                </div>
+                <div class="contactinfo">
+                    <div class="synopsis">CONTACT</div>
+                    <ul >
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></i></span>
+                        <span class="text">&nbsp;&nbsp;${user.phonenumber}</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">&nbsp;${user.email}</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">&nbsp;&nbsp;&nbsp;${user.address}</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="education">
+                    <div class="synopsis">EDUCATION</div>
+                    <ul >
+                        <li>
+                            <div class="subheading">Degree</div>
+                            <span class="icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                            <span class="text">University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ${user.university} </span><br>
+                        
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                            <span class="text">Period&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ${user.year}&nbsp;</span><br>
+                            
+                       
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                            <span class="text">Percentage &nbsp;&nbsp;&nbsp;- ${user.percentage}</span>
+                        </li>
+                       
+                      </ul>`
+                      user.edu.forEach((list)=>{
+                        htmlContent=`${htmlContent} <ul >
+                        <li>
+                            <div class="subheading">${list.heading}</div>
+                            <span class="icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                            <span class="text">School &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ${list.name}</span><br>
+                        
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                            <span class="text">Board&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ${list.board}&nbsp;</span><br>
+                            
+                       
+                        </li>
+                       
+                        <li>
+                            <span class="icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                            <span class="text">Period&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ${list.year}&nbsp;</span><br>
+                            
+                       
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                            <span class="text">Percentage &nbsp;&nbsp;&nbsp;- ${list.percentage}</span>
+                        </li>
+                      </ul>`
+                     
+                      })
+                       htmlContent=`${htmlContent} <div class="Profile">
+                            <div class="synopsis">INTERNSHIP</div>
+                            <p>${user.internship}</p>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="Right">
+                    <div class="PROFICENCY">
+                    <div class="rightsynopsis"><i class="fa fa-chevron-right" aria-hidden="true"></i>SOFTWARE PROFICENCY</div>
+                    <ul >
+                    <li>
+                        <span class="iconr"></span>
+                        <span class="textr"><strong>Language Know&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong>&nbsp;${user.languageknown}</span>
+                    </li>
+                    <li>
+                        <span class="iconr"></span>
+                        <span class="textr"><strong>Database&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</strong>${user.database}</span>
+                    </li>
+                    <li>
+                        <span class="iconr"></span>
+                        <span class="textr"><strong>Web Desining Tools&nbsp;:</strong>&nbsp;${user.webdesigntool}</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="Intrest">
+                    <div class="rightsynopsis"><i class="fa fa-chevron-right" aria-hidden="true"></i>AREA OF INTREST</div>`
+                 user.intrest.forEach((item1)=>{
+                    htmlContent=`${htmlContent}<ul>
+                        <li>
+                            <span class="iconi"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                            <span class="textr">${item1}</span>
+                        </li></ul>
+                `
+                 }); 
+                    htmlContent=`${htmlContent}</div>    
+                <div class="Project">
+                    <div class="rightsynopsis"><i class="fa fa-chevron-right" aria-hidden="true"></i>PROJECT</div>
+                    <P><strong>${user.ProjectName}</strong><br>&nbsp;&nbsp;${user.projectdes}</P>
+                </div>
+                <div class="Achivements">
+                    <div class="rightsynopsis"><i class="fa fa-chevron-right" aria-hidden="true"></i>ACHIEVEMENTS</div>
+                    `
+                user.Achivements.forEach((item2, index) => {
+                    htmlContent = `${htmlContent}<ul><li>
+                        <span class="iconr"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <span class="textr">${item2}</strong></span>
+                    </li></ul>`
+
+                });
+
+                htmlContent = `${htmlContent}
+                </div>
+                <div class="Project">
+                    <div class="rightsynopsis"><i class="fa fa-chevron-right" aria-hidden="true"></i>GITHUB</div>
+                    <P><i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;${user.github}</P>
+                </div>
+               
+                <div class="Project">
+                    <div class="rightsynopsis"><i class="fa fa-chevron-right" aria-hidden="true"></i>DECLARATION</div>
+                    <P>&nbsp;&nbsp;I hereby certify that above mentioned Particulars are correct to the best of my knowledge and belief.</P>
+                    <br>
+                    <h1><strong>Yours Sincerely</strong></h1>
+                </div>
+               
+                
+                    </div>
+    
+            </div>
+       `
+            });
+            document.getElementById("pannel").innerHTML = htmlContent;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container" id="pannel">
+
+           </div>
+    <script>
+        loadContent();
+
+    </script>
+</body>
+
+</html>
