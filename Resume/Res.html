@@ -12,225 +12,220 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"/>
-      <script>
-        function rescontent(){
-          let user ={
-              "data": [{
-      "phone": "8778734610",
-      "mailid": "priyalatha24042002@gmail.com",
-      "linkedin": "https://www.linkedin.com/in/priyalatha-s/",
-      "github": "https://github.com/priyalatha24",
-      "skill": ["HTML", "CSS", "JS", "Git"],
-      "title":"udemy",
-      "udemy": "Introduction to web development",
-      "certificate": [
-        {
-          "title":"Guvi",
-          "Guvi": "Programming in Javascript"}, 
-          {
-            "title":"Guvi",
-            "Guvi":"Programming in HTML,CSS"}
-      ],
-      "careerObjective": "The quest to learn and work in an environment where my skill and knowledge reflect the company's growth and enhances my knowledge as well as experience. Seeking a new opportunity that will expand my skill set."
-    },
-    {
-      "ACADEMIC_CREDENTIAL": [
-        {
-          "heading": "BE-COMPUTER SCIENCE AND ENGINEERING",
-          "des": "Vivekanandha College of Technology for Women CGPA:8.15"
-        },
-        {
-          "heading": "HSC(2019)",
-          "des": "Cluny Matric Higher Secondary School"
-        },
-        {
-          "heading": "SSLC(2017)",
-          "des": "LEF Eden Garden Matric School"
-        }
-      ],
-      "INTERNSHIPS":[
-        {
-        "heading":"WEBDEVLOPMENT WITH PYTHON AT TECHVOLTSOFTWARE",
-        "des":"Devloped a e-commerce website that online shoppers see and interact"
-        }
-        ],
-        "PROJECTS":"Devloped a Library Management system,Devloped a Simple clothing Webpage like Flipkart"
-            }
-          ]
-}
-          let htmlContent ="";
-          user.data.forEach((user) =>{
-            htmlContent =`${htmlContent}
-            <div class="left_side">
-        <div class="profileText">
-          <div class="imgBox">
-            <img src="${user.img}" alt="profilepic" />
-          </div>
-         
-        </div>
-
-        <!--contact info-->
-        <div class="contactInfo">
-          <h3 class="title">Contact Info</h3>
-          <ul>
-            <li>
-              <span class="icon"
-                ><i class="fa fa-mobile" aria-hidden="true"></i
-              ></span>
-              <span class="text">&nbsp;&nbsp;${user.phone}</span>
-            </li>
-
-            <li>
-              <span class="icon"
-                ><i class="fa fa-envelope" aria-hidden="true"></i
-              ></span>
-              <span>&nbsp;&nbsp;${user.mailid}</span>
-            </li>
-
-            <li>
-              <span class="icon"
-                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-              ></span>
-              <a href="${user.linkedin}"
-                >linkedin.com</a
-              >
-            </li>
-
-            <li>
-              <span class="icon"
-                ><i class="fa fa-github-square" aria-hidden="true"></i
-              ></span>
-              <a href="${user.github}">github.com</a>
-            </li>
-          </ul>
-        </div>
-
-        <!--skills -->
-        <div class="Skills">
-          <h3 class="title">Skills</h3>`
-        
-          user.skill.forEach((skills1)=>{
-            htmlContent =`${htmlContent}
-          <ul>
-            <li>${skills1}</li>
-            
-          </ul>`})
-          htmlContent =`${htmlContent}
-        </div>
-
-
-        <!--Certificate-->
-        <div class="Certificate">
-          <h3 class="title">Certificate</h3>`
-          user.certificate.forEach((cer)=>{
-             htmlContent=`${htmlContent}
-          <ul>
-            <li>
-              <span class="text"><b>${cer.title}</b></span
-              ><br />
-              <p>${cer.udemy}</p>
-            </li>
-            <li>
-              <span class="text"><b>${cer.title}</b></span
-              ><br />
-              <p>${cer.Guvi}</p>
-            </li>
-            
-          </ul>`
-          htmlContent =`${htmlContent}
-        </div>
-      </div>
-      <!--right side starts here -->
-      <div class="right_side">
-        <div class="about">
-          <h2 class="title2"></h2>
-        </div>
-        <!--rgt side 1.career objective-->
-        <div class="Carrer_objective">
-          <h3 class="title">career Objective</h3>
-          <p>
-            The quest to learn and work in an environment where my skill and
-            knowledge reflect the company's frowth and enhance my knowledge as
-            well as experience. Seeking a new opportunity that will expand my
-            skill set.
-          </p>
-        </div>
-
-        <!--2.Academic credential-->
-        <div class="Academiccredential">
-          <h3 class="title">academic credential</h3>
-          <ul>
-            <li>
-              <span class="text"
-                ><b>BE-COMPUTER SCIENCE AND ENGINEERING</b><br />
-              </span>
-              <h5>2010 -2013</h5>
-              <br />
-              <span class="text"
-                >Vivekanandha College of Technology for Women</span
-              ><br />
-              <p>CGPA:8.15</p>
-            </li>
-            <br />
-            <li>
-              <span class="text"><b>HSC(2019)</b></span
-              ><br />
-              <p>Cluny Matric Higher Secondary School</p>
-            </li>
-            <br />
-            <li>
-              <span class="text"><b>SSLC(2017)</b></span
-              ><br />
-              <p>LEF Eden Garden Matric School</p>
-            </li>
-          </ul>
-        </div>
-
-        <!--3.Internships-->
-        <div class="Internships">
-          <h3 class="title">internships</h3>
-          <ul>
-            <li>
-              <span class="text"
-                ><b>WEBDEVLOPMENT WITH PYTHON AT TECHVOLTSOFTWARE</b></span
-              ><br />
-              <p>
-                Devloped a e-commerce website that online shoppers see and
-                interact
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <!--4.Projects-->
-        <div class="Projects">
-          <h3 class="title">projects</h3>
-          <ul>
-            <li>
-              <span class="text">Devloped a Library Management system</span
-              ><br />
-            </li>
-          </ul>
-
-          <ul>
-            <li>
-              <span class="text"
-                >Devloped a Simple clothing Webpage like Flipkart</span
-              ><br />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  });
-  document.getElementByID("pannel").innerHTML = htmlContent;`
-
-          })
-        }
-  
-      </script>
+     
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="pannel">
+
+      
+    </div>
+    <script>
+      function rescontent(){
+        let user ={
+            "data": [{
+    "phone": "8778734610",
+    "mailid": "priyalatha24042002@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/priyalatha-s/",
+    "github": "https://github.com/priyalatha24",
+    "skill": ["HTML", "CSS", "JS", "Git"],
+    "certificate":[
+    {"title":"udemy",
+    "udemy": "Introduction to web development"},
+     
+      {
+        "title":"Guvi",
+        "Guvi": "Programming in Javascript"}, 
+        {
+          "title":"Guvi",
+          "Guvi":"Programming in HTML,CSS"}
+        ],
+        "titleCO":"careerObjective",
+    "careerObjective": "The quest to learn and work in an environment where my skill and knowledge reflect the company's growth and enhances my knowledge as well as experience. Seeking a new opportunity that will expand my skill set."
+  },
+  {
+    "titleAC":"ACADEMIC_CREDENTIAL",
+    "ACADEMIC_CREDENTIAL": [
+      {
+        "heading": "BE-COMPUTER SCIENCE AND ENGINEERING",
+        "year":"2010 -2013",
+        "des": "Vivekanandha College of Technology for Women",
+        "cgpa": "CGPA:8.15"
+      },
+      {
+        "heading": "HSC(2019)",
+        "des": "Cluny Matric Higher Secondary School"
+      },
+      {
+        "heading": "SSLC(2017)",
+        "des": "LEF Eden Garden Matric School"
+      }
+    ],
+    "titleIntern":"INTERNSHIPS",
+    "INTERNSHIPS":[
+      {
+      "heading":"WEBDEVLOPMENT WITH PYTHON AT TECHVOLTSOFTWARE",
+      "des":"Devloped a e-commerce website that online shoppers see and interact"
+      }
+      ],
+      "titleproj":"PROJECTS",
+      "PROJECTS":"Devloped a Library Management system,Devloped a Simple clothing Webpage like Flipkart"
+      
+          }
+        ]
+}
+        let htmlContent ="";
+        user.data.forEach((user) =>{
+          htmlContent =`${htmlContent}
+          <div class="left_side">
+      <div class="profileText">
+        <div class="imgBox">
+          <img src="${user.img}" alt="profilepic" />
+        </div>
+       
+      </div>
+
+      <!--contact info-->
+      <div class="contactInfo">
+        <h3 class="title">Contact Info</h3>
+        <ul>
+          <li>
+            <span class="icon"
+              ><i class="fa fa-mobile" aria-hidden="true"></i
+            ></span>
+            <span class="text">&nbsp;&nbsp;${user.phone}</span>
+          </li>
+
+          <li>
+            <span class="icon"
+              ><i class="fa fa-envelope" aria-hidden="true"></i
+            ></span>
+            <span>&nbsp;&nbsp;${user.mailid}</span>
+          </li>
+
+          <li>
+            <span class="icon"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+            ></span>
+            <a href="${user.linkedin}"
+              >linkedin.com</a
+            >
+          </li>
+
+          <li>
+            <span class="icon"
+              ><i class="fa fa-github-square" aria-hidden="true"></i
+            ></span>
+            <a href="${user.github}">github.com</a>
+          </li>
+        </ul>
+      </div>`})
+htmlContent=`${htmlContent}
+      <!--skills -->
+      <div class="Skills">
+        <h3 class="title">Skills</h3>`
+      
+      
+        user.skill.forEach((skills1)=>{
+          htmlContent =`${htmlContent}
+        <ul>
+          <li>${skills1}</li>
+          
+        </ul>`})
+        htmlContent =`${htmlContent}
+      </div>
+      <!--Certificate-->
+      <div class="Certificate">
+        <h3 class="title">Certificate</h3>`
+    user.certificate.forEach((cer)=>{
+           htmlContent=`${htmlContent}
+        <ul>
+          <li>
+            <span class="text"><b>${cer.title}</b></span
+            ><br />
+            <p>${cer.udemy}</p>
+          </li>
+          <li>
+            <span class="text"><b>${cer.title}</b></span
+            ><br />
+            <p>${cer.Guvi}</p>
+          </li>
+          
+        </ul>`})
+        htmlContent =`${htmlContent}
+      </div>
+    </div>
+    <!--right side starts here -->
+    <div class="right_side">
+      <div class="about">
+        <h2 class="title2">${user.name}</h2>
+      </div>
+      <!--rgt side 1.career objective-->
+      <div class="Carrer_objective">
+        <h3 class="title">${user.careerObjective}</h3>
+        <p>
+          ${user.careerObjective}
+        </p>
+      </div>`
+      user.ACADEMIC_CREDENTIAL.forEach((Academic)=>{
+          htmlContent =`${htmlContent}
+      <!--2.Academic credential-->
+      <div class="Academiccredential">
+        <h3 class="title">${Academic}</h3>
+        <ul>
+          <li>
+            <span class="text"
+              ><b>${Academic.heading}</b><br />
+            </span>
+            <h5>${Academic.year}</h5>
+            <br />
+            <span class="text">${des}</span><br />
+            <p>${Academic.cgpa}</p>
+          </li>
+          <br />
+          
+      </div>`
+
+      user.INTERNSHIPS.forEach((Intern)=>{
+          htmlContent =`${htmlContent}
+      <!--3.Internships-->
+      <div class="Internships">
+        <h3 class="title">${Intern.titleIntern}</h3>
+        <ul>
+          <li>
+            <span class="text"><b>${Intern.heading}</b></span><br />
+            <p>
+              ${Intern.des}
+            </p>
+          </li>
+        </ul>
+      </div>`
+      htmlContent =`${htmlContent}
+      <!--4.Projects-->
+      <div class="Projects">
+        <h3 class="title">${user.titleproj}</h3>
+        <ul>
+          <li>
+            <span class="text">${user.PROJECTS}</span><br/>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <span class="text">${user.PROJECTS}</span><br />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>`
+});
+document.getElementByID("pannel").innerHTML = htmlContent;
+
+        })
+      }
+
+    </script>
   </body>
+  <script>
+    rescontent();
+  </script>
 </html>
